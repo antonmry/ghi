@@ -23,6 +23,12 @@ chmod 755 ghi && \
 mv ghi /usr/local/bin
 ```
 
+Via docker (image available in [docker hub](https://hub.docker.com/r/antonmry/ghi-docker/)):
+``` sh
+docker pull antonmry/ghi-docker
+alias ghi='docker run -i -t --rm -v $HOME:/home/ghi antonmry/ghi-docker'
+```
+
 ## Usage
 
 ```
